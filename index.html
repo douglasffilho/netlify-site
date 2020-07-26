@@ -7,34 +7,35 @@
     <title>Calculator</title>
   </head>
   <body>
+    <script src="./index.js"></script>
     <div class="calculator">
         <div class="number-line">
-            <p class="display"></p>
+            <input class="display" placeholder="0" type="number" id="display">
         </div>
         <div class="number-line">
-            <p class="number">1</p>
-            <p class="number">2</p>
-            <p class="number">3</p>
+            <button class="number" onclick="buttonClick(event);">1</button>
+            <button class="number" onclick="buttonClick(event);">2</button>
+            <button class="number" onclick="buttonClick(event);">3</button>
         </div>
         <div class="number-line">
-            <p class="number">4</p>
-            <p class="number">5</p>
-            <p class="number">6</p>
+            <button class="number" onclick="buttonClick(event);">4</button>
+            <button class="number" onclick="buttonClick(event);">5</button>
+            <button class="number" onclick="buttonClick(event);">6</button>
         </div>
         <div class="number-line">
-            <p class="number">7</p>
-            <p class="number">8</p>
-            <p class="number">9</p>
+            <button class="number" onclick="buttonClick(event);">7</button>
+            <button class="number" onclick="buttonClick(event);">8</button>
+            <button class="number" onclick="buttonClick(event);">9</button>
         </div>
         <div class="number-line">
-            <p class="simbol minus">-</p>
-            <p class="number">0</p>
-            <p class="simbol plus">+</p>
+            <button class="simbol minus" onclick="registerOperation('minus');">-</button>
+            <button class="number" onclick="buttonClick(event);">0</button>
+            <button class="simbol plus" onclick="registerOperation('sum');">+</button>
         </div>
         <div class="number-line">
-            <p class="simbol divide">÷</p>
-            <p class="simbol multiply">x</p>
-            <p class="simbol equal">=</p>
+            <button class="simbol divide" onclick="registerOperation('divide');">÷</button>
+            <button class="simbol multiply" onclick="registerOperation('multiply');">x</button>
+            <button class="simbol equal" onclick="doOperation();">=</button>
         </div>
     </div>
   </body>

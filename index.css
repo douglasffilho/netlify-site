@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 html,
 body {
     width: 100%;
@@ -20,4 +30,33 @@ body {
     background-color: white;
     border-radius: 0.3rem;
     box-shadow: black 0rem 0rem 2rem;
+}
+
+.calculator .number-line:first-child {
+    height: 4rem;
+}
+
+.number-line {
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.display {
+    height: 90%;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: lightblue;
+    border-radius: 0.3rem;
+    color: darkgreen;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.number,
+.simbol {
+    height: 2rem;
+    width: 3.2rem;
 }
